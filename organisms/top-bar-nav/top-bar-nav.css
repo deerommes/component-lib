@@ -1,0 +1,42 @@
+// _top-nav.scss
+$nav-height: 60px;
+$nav-bg-color: #fff;
+$nav-text-color: #333;
+$nav-icon-size: 24px;
+
+.top-nav {
+  height: $nav-height;
+  background-color: $nav-bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  .menu-icon,
+  .user-icon,
+  .notification-icon {
+    font-size: $nav-icon-size;
+    color: $nav-text-color;
+    cursor: pointer;
+  }
+
+  .logo {
+    /* Assuming the logo is an image */
+    height: 50%; // Scale the logo to 50% of the navigation bar's height
+    cursor: pointer;
+  }
+
+  .user-area {
+    display: flex;
+    align-items: center;
+
+    .user-avatar {
+      margin-right: 1rem; // Space between avatar and adjacent icons
+    }
+
+    /* Notification badge from the previous step */
+    .badge {
+      // SCSS from the previous example would go here
+    }
+  }
+}

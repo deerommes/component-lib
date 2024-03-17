@@ -1,0 +1,126 @@
+/* Base styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif; /* This should be your default body font */
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow the container to wrap on smaller screens */
+  background-color: #00354d;
+}
+
+.image-section {
+  flex: 1; /* Takes up 1/2 of the container */
+  background: linear-gradient(
+      0deg,
+      rgba(0, 52, 76, 0.25),
+      rgba(0, 52, 76, 0.25)
+    ),
+    url('images/aboutus.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 300px; /* Minimum height to ensure visibility */
+}
+
+.content-section {
+  flex: 1; /* Takes up 1/2 of the container */
+  padding: 2rem; /* Responsive padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  color: #fff6ea;
+  font-size: 4rem; /* Responsive font-size */
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  margin: 0 0 1rem 0; /* Responsive margin */
+}
+
+.description {
+  color: #fff6ea;
+  font-size: 1.25rem; /* Responsive font-size */
+  line-height: 1.6;
+  margin: 0 0 1rem 0; /* Responsive margin */
+}
+
+.cta-button {
+  padding: 1em 2em; /* Responsive padding */
+  background-color: #d09366;
+  color: #fff6ea;
+  font-size: 1.25rem; /* Responsive font-size */
+  font-family: 'Alegreya Sans', sans-serif;
+  font-weight: 700;
+  line-height: 1.14;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.cta-button:hover {
+  transform: scale(1.15); /* Subtle grow effect on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 3rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .cta-button {
+    font-size: 1rem;
+    padding: 0.75em 1.5em;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the elements on medium screens */
+  }
+
+  .image-section,
+  .content-section {
+    flex: none;
+    width: 100%; /* Full width for small screens */
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .cta-button {
+    font-size: 0.9rem;
+    padding: 0.5em 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .cta-button {
+    font-size: 0.8rem;
+    padding: 0.5em;
+  }
+}

@@ -1,0 +1,21 @@
+.warning-alert {
+  background-color: #ffc107;
+  color: #212529;
+  padding: 15px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+
+  .icon {
+    margin-right: 10px;
+  }
+
+  .text {
+    flex-grow: 1;
+  }
+
+  a {
+    color: #007bff;
+    text-decoration: underline;
+  }
+}

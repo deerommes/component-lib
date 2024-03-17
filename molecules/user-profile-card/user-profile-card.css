@@ -1,0 +1,45 @@
+// _profile-card.scss
+$profile-card-bg: #fff;
+$profile-card-border-radius: 0.25rem;
+$profile-card-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$profile-card-padding: 1rem;
+$profile-card-margin-bottom: 1rem;
+$profile-high-risk-color: #d9534f;
+$profile-normal-risk-color: #5bc0de;
+
+.profile-card {
+  background: $profile-card-bg;
+  border-radius: $profile-card-border-radius;
+  box-shadow: $profile-card-box-shadow;
+  padding: $profile-card-padding;
+  margin-bottom: $profile-card-margin-bottom;
+  display: flex;
+  align-items: center;
+
+  .avatar {
+    margin-right: $profile-card-padding;
+  }
+
+  .user-info {
+    flex-grow: 1;
+
+    .user-name {
+      font-weight: bold;
+    }
+
+    .user-risk {
+      color: $profile-high-risk-color;
+      font-size: 0.875rem;
+      margin-top: 0.25rem;
+    }
+  }
+
+  .risk-label {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background-color: $profile-high-risk-color;
+    color: $profile-card-bg;
+    border-radius: $profile-card-border-radius;
+    font-size: 0.75rem;
+  }
+}

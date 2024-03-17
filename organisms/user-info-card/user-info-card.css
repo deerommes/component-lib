@@ -1,0 +1,67 @@
+.user-info-card {
+  background: #fff;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  padding: $card-padding;
+  margin-bottom: $card-margin-bottom;
+
+  .user-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $spacing;
+
+    .user-name {
+      font-weight: bold;
+    }
+
+    .user-id {
+      font-style: italic;
+      color: $text-muted;
+    }
+  }
+
+  .user-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $spacing;
+
+    .stat-item {
+      display: flex;
+      align-items: center;
+
+      .stat-value {
+        font-weight: bold;
+      }
+
+      .stat-label {
+        margin-left: $spacing-xs;
+      }
+    }
+  }
+
+  .user-risk-level {
+    @extend .chip;
+    background-color: $danger;
+  }
+
+  .view-button {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  .user-avatar-alerts {
+    position: relative;
+
+    .user-avatar {
+      // Avatar styles
+    }
+
+    .alerts-indicator {
+      position: absolute;
+      top: 0;
+      right: 0;
+      // Indicator styles
+    }
+  }
+}

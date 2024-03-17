@@ -1,0 +1,27 @@
+.profile-summary {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  background: #fff;
+  border-radius: 4px;
+
+  .avatar {
+    width: 50px; // Adjust based on your design
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+
+  .info {
+    flex-grow: 1;
+
+    .name {
+      font-weight: bold;
+    }
+
+    .action {
+      color: #007bff;
+      cursor: pointer;
+    }
+  }
+}
