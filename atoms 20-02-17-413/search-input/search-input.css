@@ -1,0 +1,40 @@
+// _search-input.scss
+$search-input-height: 38px;
+$search-input-border-radius: $card-border-radius; // Assuming you have a variable like this from your cards
+$search-input-border-color: #ced4da;
+$search-input-bg-color: #fff;
+$search-input-btn-bg-color: #007bff;
+$search-input-btn-color: #fff;
+
+.search-input-group {
+  display: flex;
+  height: $search-input-height;
+  border: 1px solid $search-input-border-color;
+  border-radius: $search-input-border-radius;
+  overflow: hidden; // Ensures inner elements don't break the border-radius
+
+  .search-input {
+    flex: 1;
+    border: none;
+    padding: 0 12px;
+    background-color: $search-input-bg-color;
+    height: 100%;
+
+    &:focus {
+      outline: none; // Removes the default focus outline
+      box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075); // Subtle focus indication
+    }
+  }
+
+  .search-btn {
+    background-color: $search-input-btn-bg-color;
+    border: none;
+    color: $search-input-btn-color;
+    padding: 0 15px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($search-input-btn-bg-color, 10%);
+    }
+  }
+}

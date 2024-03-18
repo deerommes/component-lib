@@ -1,0 +1,38 @@
+// _stat-cards.scss
+$stat-card-bg: #fff; // White background for the card
+$stat-card-border-radius: 0.25rem; // Consistent with other cards
+$stat-card-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1),
+  0 1px 2px rgba(0, 0, 0, 0.06); // Subtle shadow
+$stat-card-margin: 0.5rem; // Space around the card
+$stat-card-padding: 1rem; // Padding inside the card
+$stat-card-title-size: 1.5rem; // Size of the number/title
+$stat-card-text-size: 1rem; // Size of the label
+$stat-card-icon-size: 2rem; // Size of the icon
+$stat-card-color: #4a5568; // Color of the text
+$stat-card-title-color: #2d3748; // Color of the number/title
+$stat-card-icon-color: #a0aec0; // Color of the icon
+
+.stat-card {
+  background-color: $stat-card-bg;
+  border-radius: $stat-card-border-radius;
+  box-shadow: $stat-card-box-shadow;
+  margin: $stat-card-margin;
+  padding: $stat-card-padding;
+  text-align: center;
+
+  &-icon {
+    font-size: $stat-card-icon-size;
+    color: $stat-card-icon-color;
+  }
+
+  &-title {
+    font-size: $stat-card-title-size;
+    color: $stat-card-title-color;
+    margin: 0.5rem 0; // Space between the icon and the number
+  }
+
+  &-text {
+    font-size: $stat-card-text-size;
+    color: $stat-card-color;
+  }
+}

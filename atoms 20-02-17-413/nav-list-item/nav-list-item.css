@@ -1,0 +1,13 @@
+.nav-item {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+
+  .icon {
+    margin-right: 10px; // Adjust based on your design
+  }
+
+  .text {
+    font-weight: 600; // Adjust based on your design
+  }
+}

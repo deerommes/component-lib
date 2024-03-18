@@ -1,0 +1,44 @@
+// _cards.scss
+$card-border-radius: 0.25rem;
+$card-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+$card-margin: 1rem;
+$card-padding: 1rem;
+$high-risk-color: #d9534f;
+$normal-risk-color: #5bc0de;
+$success-color: #5cb85c;
+$card-header-bg: #f7f7f7;
+$card-border-color: #ddd;
+
+.card-custom {
+  margin: $card-margin;
+  background-color: #fff;
+  border: 1px solid $card-border-color;
+  border-radius: $card-border-radius;
+  box-shadow: $card-box-shadow;
+  padding: $card-padding;
+
+  &-header {
+    background-color: $card-header-bg;
+    padding: $card-padding;
+    border-bottom: 1px solid $card-border-color;
+  }
+
+  &-body {
+    padding: $card-padding;
+  }
+
+  &-high-risk {
+    border-left-color: $high-risk-color;
+    border-left-width: 4px;
+  }
+
+  &-normal-risk {
+    border-left-color: $normal-risk-color;
+    border-left-width: 4px;
+  }
+
+  &-success {
+    border-left-color: $success-color;
+    border-left-width: 4px;
+  }
+}

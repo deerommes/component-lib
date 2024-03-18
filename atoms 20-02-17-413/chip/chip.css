@@ -1,0 +1,22 @@
+// _chips.scss
+$chip-height: 32px;
+$chip-danger-bg: #dc3545; // Bootstrap's danger color
+$chip-text-color: #ffffff;
+
+.chip {
+  display: inline-block;
+  padding: 0 12px;
+  height: $chip-height;
+  line-height: $chip-height;
+  border-radius: $chip-height / 2; // Circular ends
+  background-color: $chip-danger-bg;
+  color: $chip-text-color;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  border: none;
+  cursor: default;
+}
+
+.chip-danger {
+  background-color: $chip-danger-bg;
+}

@@ -1,0 +1,35 @@
+// _navigation.scss
+$nav-background-color: #f8f9fa; // Light gray background
+$nav-item-color: #333; // Dark text for contrast
+$nav-item-hover-color: #5c4ac7; // Purple color for hover state
+$nav-item-active-color: #fff; // White text for active state
+$nav-item-active-bg-color: $nav-item-hover-color; // Purple background for active state
+
+.nav-custom {
+  background-color: $nav-background-color;
+  padding: 0;
+  list-style: none;
+
+  .nav-item {
+    display: block;
+
+    .nav-link {
+      color: $nav-item-color;
+      padding: 0.5rem 1rem; // Adjust padding as needed
+      text-decoration: none;
+      transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $nav-item-hover-color;
+        background-color: lighten($nav-background-color, 5%);
+      }
+
+      &.active {
+        color: $nav-item-active-color;
+        background-color: $nav-item-active-bg-color;
+        border-left: 4px solid $nav-item-active-color; // A left border for the active item
+      }
+    }
+  }
+}

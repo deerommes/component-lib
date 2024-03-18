@@ -1,0 +1,35 @@
+// _user-avatar.scss
+$avatar-size: 48px; // Example size for avatar image
+$badge-size: 20px; // Size of the notification badge
+$badge-bg-color: #dc3545; // Background color for the notification badge (e.g., red)
+$badge-text-color: #ffffff; // Text color for the notification badge
+
+.user-avatar {
+  position: relative;
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: 50%; // Circular avatar
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: $badge-size;
+    height: $badge-size;
+    background-color: $badge-bg-color;
+    color: $badge-text-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem; // Smaller font size for the badge
+    border: 2px solid #ffffff; // Border to separate the badge from the avatar image
+  }
+}
